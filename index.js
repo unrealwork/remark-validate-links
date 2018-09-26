@@ -200,7 +200,7 @@ function transformerFactory(fileSet, info) {
           var match = htmlElement.rawAttrs.match(nameAttrRegex)
           if (match && match.length > 1) {
             var anchor = match[1]
-            id = slugs.slug(anchor)
+            id = anchor
           }
         }
       }
