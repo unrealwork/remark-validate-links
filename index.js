@@ -196,7 +196,7 @@ function transformerFactory(fileSet, info) {
         var dom = parseHtml(node.value)
         var htmlElement = dom.firstChild
         if (htmlElement && htmlElement.tagName === 'a') {
-          var nameAttrRegex = /name=["](\w+)["]/
+          var nameAttrRegex = /name=["]([\w|-]+)["]/
           var match = htmlElement.rawAttrs.match(nameAttrRegex)
           if (match && match.length > 1) {
             var anchor = match[1]
