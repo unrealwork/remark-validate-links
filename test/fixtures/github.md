@@ -64,9 +64,9 @@ Valid: [b](http://bitbucket.com/wooorm/test/blob/foo-bar/examples/world.md#hello
 
 # HTML Anchors
 
-<a name="hidden"></a>
+<a name="hidden-link"></a>
 <div id="test"></div>
 <a id="test"></div>
 This is a valid relative html anchor [link](./examples/github.md#html).
 
-Valid: [link](#hidden)
+Valid: [link](#hidden-link)
